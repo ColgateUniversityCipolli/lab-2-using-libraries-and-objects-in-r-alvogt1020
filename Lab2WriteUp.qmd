@@ -201,3 +201,6 @@ citation(package = "esquisse")
 ```
 
 After adding the citation to our `.bib` file, we can also obtain the lovely in-text citation, [@esquisse].
+
+
+## Part F (Sol.)
