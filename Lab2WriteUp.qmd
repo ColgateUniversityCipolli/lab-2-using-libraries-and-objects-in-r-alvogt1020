@@ -204,3 +204,4 @@ After adding the citation to our `.bib` file, we can also obtain the lovely in-t
 
 
 ## Part F (Sol.)
+Following the instructions outlined in Part F, we generate a histogram with the body mass of penguins on the x axis and the total count on the y axis. The histogram is color-coded by species of penguins. The histogram is right skewed with a peak around the 3500 gram mark. We see that the Adelie penguins are more populous than the other two species. Furthermore, Adelie penguinshave an average mass of in the 3500-4000 gram range. 
