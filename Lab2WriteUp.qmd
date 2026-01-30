@@ -180,12 +180,24 @@ install.packages("esquisse")
 library("esquisse")
 ```
 
-## Part C (Sol.)
+## Parts C-D (Sol.)
 There are multiple ways in which we can learn more about the `esquisse` package. The first command we can run to help us with this is the `help("package = ...")` command. This retrieves the package's documentation. If we'd like to see the package in use, we can check if the creator provided a demo by using the `demo("package = ...")` command. Lastly, we can check for a more detailed/comprehensive guide to the package by using the `vignette("package = ...")` command.
 
 ```{r}
 #| eval: false  
 help(package = "esquisse")
-demo(package = "esquisse") # We find that no demos exist for the esquisse package
-vignette(package = "esquisse")
+demo(package = "esquisse") 
+vignette(package = "esquisse") 
 ```
+
+After running these commands, we find that the `esquisse` package for `R` includes a vignette, but not a demo.
+
+## Part E (Sol.)
+We can easily find the BibTeX citation for `esquisse` by using the command `citation(package = "...")`.
+
+```{r}
+#| eval: false  
+citation(package = "esquisse")
+```
+
+After adding the citation to our `.bib` file, we can also obtain the lovely in-text citation, [@esquisse].
