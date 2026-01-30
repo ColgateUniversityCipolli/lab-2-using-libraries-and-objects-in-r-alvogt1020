@@ -181,3 +181,4 @@ library("esquisse")
 ```
 
 ## Part C (Sol.)
+There are multiple ways in which we can learn more about the `esquisse` package. The first command we can run to help us with this is the `help(" ")` command. This retrieves the package's documentation. If we'd like to see the package in use, we can check if the creator provided a demo by using the `demo("")` command. Lastly, we can check for a more detailed/comprehensive guide to the package by using the `vignette("")` command.
