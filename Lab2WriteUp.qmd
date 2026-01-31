@@ -248,3 +248,12 @@ To create the Treatment vector, we tell `R` to make the three-dimensional vector
 #| code-fold: FALSE
 (Treatment = rep(x = c("Control","Treatment A", "Treatment B"), times = 10))
 ```
+
+## Part 2.d
+```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
+(mixed.class = c("MATH",240))
+```
+
+The resulting class of the vector above is numeric. This is because when we construct a vector with multiple types of data in `R`, `R` will always identify the class of the last entry and apply it to all of the data stored in that vector.
