@@ -253,11 +253,17 @@ To create the Treatment vector, we tell `R` to make the three-dimensional vector
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
+class("MATH")
+class(240)
 (mixed.class = c("MATH",240))
+
+class(mixed.class)
 ```
 
 The resulting class of the vector above is character. This is because when we construct a vector with multiple types of data in `R`, `R` will always reference the following hierarchy:
 
 Logical &rarr; Integer &rarr; Numeric &rarr; Complex &rarr; Character
 
-Using this hierarchy, `R` will identify the entry in the vector that has the right-most class from the hierarchy, and encode all data as that class.
+Using this hierarchy, `R` identifes the entry in the vector that has the "right-most" class, and encode all data as that class.
+
+In this example, we see that our vector has two classess: character ("MATH") and numeric (240). Because character is to the right of numeric in the hierarchy, thus making it the "dominant" class, 240 is converted to a character and our final vector has the class of character.
