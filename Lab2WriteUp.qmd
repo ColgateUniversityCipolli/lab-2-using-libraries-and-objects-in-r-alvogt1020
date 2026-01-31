@@ -244,4 +244,5 @@ ii.
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
-
+(Treatment = rep(x = c("Control","Treatment A", "Treatment B"), each = 10))
+```
