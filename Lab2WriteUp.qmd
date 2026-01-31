@@ -214,8 +214,11 @@ We can create a vector of the first 10 Fibonacci numbers using manual vector cre
 ```
 
 ## Part 2.b
-We can create a vector of the first 10 Triangular Numbers (beginning with $F_1$) by creating a vector for the numbers 1 through 10, and then applying the formula provided:
+We can create a vector of the first 10 Triangular Numbers (beginning with $F_1$) by creating a vector for our $n$ values, 1 through 10, and then applying the formula provided:
 
 ```{r}
-(list = 1:10)
+(n = 1:10)
+(triangular.ten = (n * (1+n)) / 2)
 ```
+
+## Part 2.c
