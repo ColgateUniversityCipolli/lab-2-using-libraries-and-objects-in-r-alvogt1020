@@ -206,3 +206,10 @@ After adding the citation to our `.bib` file, we can also obtain the lovely in-t
 ## Part 1.f (Sol.)
 Following the instructions outlined in Part F, we generate a histogram with the body mass of penguins on the x axis and the total count on the y axis. The histogram is color-coded by species of penguins. The histogram is right skewed with a peak around the 3500 gram mark. We see that the Adelie penguins are more populous than the other two species. Furthermore, Adelie penguinshave an average mass of in the 3500-4000 gram range. The second most populous species is the Gentoo Penguin. Gentoo penguins, on average, weigh more than the other two species with an average mass of around the 5000 gram mark. The least populous species of penguins is the Chinstrap penguin. Their mass distribution loosely mimics that of the Adelie, with a similar center and spread, though it is slightly more symmetric than that of the Adelie penguin. The mass distribution for the Gentoo penguin is roughly symmetric.
 
+## Part 2.a
+We can create a vector of the first 10 Fibonacci numbers using manual vector creation.
+
+```{r}
+(fibonacci.ten = c(0,1,1,2,3,5,8,13,21,34))
+```
+
