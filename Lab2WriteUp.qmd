@@ -173,14 +173,14 @@ Create a vector containing the `character` "MATH" and the `numeric` 240. What is
 
 
 # Solutions
-## Parts A-B (Sol.)
+## Parts 1.a-b (Sol.)
 ```{r}
 #| eval: false
 install.packages("esquisse")
 library("esquisse")
 ```
 
-## Parts C-D (Sol.)
+## Parts 1.c-d (Sol.)
 There are multiple ways in which we can learn more about the `esquisse` package. The first command we can run to help us with this is the `help("package = ...")` command. This retrieves the package's documentation. If we'd like to see the package in use, we can check if the creator provided a demo by using the `demo("package = ...")` command. Lastly, we can check for a more detailed/comprehensive guide to the package by using the `vignette("package = ...")` command.
 
 ```{r}
@@ -192,7 +192,7 @@ vignette(package = "esquisse")
 
 After running these commands, we find that the `esquisse` package for `R` includes a vignette, but not a demo.
 
-## Part E (Sol.)
+## Part 1.e (Sol.)
 We can easily find the BibTeX citation for `esquisse` by using the command `citation(package = "...")`.
 
 ```{r}
@@ -203,5 +203,6 @@ citation(package = "esquisse")
 After adding the citation to our `.bib` file, we can also obtain the lovely in-text citation, [@esquisse].
 
 
-## Part F (Sol.)
+## Part 1.f (Sol.)
 Following the instructions outlined in Part F, we generate a histogram with the body mass of penguins on the x axis and the total count on the y axis. The histogram is color-coded by species of penguins. The histogram is right skewed with a peak around the 3500 gram mark. We see that the Adelie penguins are more populous than the other two species. Furthermore, Adelie penguinshave an average mass of in the 3500-4000 gram range. The second most populous species is the Gentoo Penguin. Gentoo penguins, on average, weigh more than the other two species with an average mass of around the 5000 gram mark. The least populous species of penguins is the Chinstrap penguin. Their mass distribution loosely mimics that of the Adelie, with a similar center and spread, though it is slightly more symmetric than that of the Adelie penguin. The mass distribution for the Gentoo penguin is roughly symmetric.
+
