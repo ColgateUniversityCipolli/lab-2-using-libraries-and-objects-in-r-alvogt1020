@@ -175,6 +175,8 @@ Create a vector containing the `character` "MATH" and the `numeric` 240. What is
 # Solutions
 ## Parts 1.a-b (Sol.)
 ```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
 #| eval: false
 install.packages("esquisse")
 library("esquisse")
@@ -184,6 +186,8 @@ library("esquisse")
 There are multiple ways in which we can learn more about the `esquisse` package. The first command we can run to help us with this is the `help("package = ...")` command. This retrieves the package's documentation. If we'd like to see the package in use, we can check if the creator provided a demo by using the `demo("package = ...")` command. Lastly, we can check for a more detailed/comprehensive guide to the package by using the `vignette("package = ...")` command.
 
 ```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
 #| eval: false  
 help(package = "esquisse")
 demo(package = "esquisse") 
@@ -196,6 +200,8 @@ After running these commands, we find that the `esquisse` package for `R` includ
 We can easily find the BibTeX citation for `esquisse` by using the command `citation(package = "...")`.
 
 ```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
 #| eval: false  
 citation(package = "esquisse")
 ```
@@ -210,6 +216,8 @@ Following the instructions outlined in Part F, we generate a histogram with the 
 We can create a vector of the first 10 Fibonacci numbers using manual vector creation:
 
 ```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
 (fibonacci.ten = c(0,1,1,2,3,5,8,13,21,34))
 ```
 
@@ -217,8 +225,17 @@ We can create a vector of the first 10 Fibonacci numbers using manual vector cre
 We can create a vector of the first 10 Triangular Numbers (beginning with $F_1$) by creating a vector for our $n$ values, 1 through 10, and then applying the formula provided:
 
 ```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
 (n = 1:10)
 (triangular.ten = (n * (1+n)) / 2)
 ```
 
 ## Part 2.c
+
+i.
+```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
+(ID = rep(x=1:10, each=3))
+```
