@@ -256,4 +256,4 @@ To create the Treatment vector, we tell `R` to make the three-dimensional vector
 (mixed.class = c("MATH",240))
 ```
 
-The resulting class of the vector above is numeric. This is because when we construct a vector with multiple types of data in `R`, `R` will always identify the class of the last entry and apply it to all of the data stored in that vector.
+The resulting class of the vector above is numeric. This is because when we construct a vector with multiple types of data in `R`, `R` will always identify the class of the last entry and apply it to all of the data stored in that vector. In this instance, because the last entry in our vector is the numeric value 240, it will encode all other entries (in this case, just the string "MATH") as numeric data.
