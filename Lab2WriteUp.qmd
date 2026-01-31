@@ -234,6 +234,7 @@ We can create a vector of the first 10 Triangular Numbers (beginning with $F_1$)
 ## Part 2.c
 
 i.
+We construct the ID vector by telling `R` to take the vector of numbers one through ten, and to then repeat *each component* three times before moving to the next component. 
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
@@ -241,6 +242,7 @@ i.
 ```
 
 ii.
+To create the Treatment vector, we tell `R` to make the three-dimensional vector containing each treatment status, and then repeat the vector *itself* three times (as opposed to going component by component like we did for the ID vector).
 ```{r}
 #| size: "scriptsize"
 #| code-fold: FALSE
