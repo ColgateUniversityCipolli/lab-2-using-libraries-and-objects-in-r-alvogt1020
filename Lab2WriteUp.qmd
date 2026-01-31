@@ -239,3 +239,9 @@ i.
 #| code-fold: FALSE
 (ID = rep(x=1:10, each=3))
 ```
+
+ii.
+```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
+
