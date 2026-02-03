@@ -100,18 +100,44 @@ library("esquisse")
 ```
 
 
-## Part c
+## Part c + Part d <!-- condensed these -->
 
 How can you ask for help about the `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "#\| eval: false", so that the help document isn't loaded every time you compile your Quarto document.
 
-## Part d
-
 Is a demo or vignette available for the `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "#\| eval: false", so that the you don't get errors when you compile your Quarto document.
+
+**Solutions**
+
+There are multiple ways in which we can learn more about the `esquisse` package. The first command we can run to help us with this is the `help("package = ...")` command. This retrieves the package's documentation. If we'd like to see the package in use, we can check if the creator provided a demo by using the `demo("package = ...")` command. Lastly, we can check for a more detailed/comprehensive guide to the package by using the `vignette("package = ...")` command.
+
+```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
+#| eval: false  
+help(package = "esquisse")
+demo(package = "esquisse") 
+vignette(package = "esquisse") 
+```
+
+After running these commands, we find that the `esquisse` package for `R` includes a vignette, but not a demo.
 
 ## Part e
 
 Add the BibTeX citation for `esquisse` package for `R` to your `.bib` file and cite it in a sentence describing what the package does below. Note you can reference a citation named `esquisse` using "\[\@\hspace{-0em}esquisse\]". <!-- Note the \hspace{-0em} above is for printing 
 the command instead of actually citing. -->
+
+**Solution**
+
+We can easily find the BibTeX citation for `esquisse` by using the command `citation(package = "...")`.
+
+```{r}
+#| size: "scriptsize"
+#| code-fold: FALSE
+#| eval: false  
+citation(package = "esquisse")
+```
+
+After adding the citation to our `.bib` file, we can also obtain the lovely in-text citation, [@esquisse].
 
 ## Part f
 
@@ -202,38 +228,16 @@ Create a vector containing the `character` "MATH" and the `numeric` 240. What is
 
 
 
-SOLUTIONS
 
 
 
 
-## Parts 1.c-d (Sol.)
 
-There are multiple ways in which we can learn more about the `esquisse` package. The first command we can run to help us with this is the `help("package = ...")` command. This retrieves the package's documentation. If we'd like to see the package in use, we can check if the creator provided a demo by using the `demo("package = ...")` command. Lastly, we can check for a more detailed/comprehensive guide to the package by using the `vignette("package = ...")` command.
 
-```{r}
-#| size: "scriptsize"
-#| code-fold: FALSE
-#| eval: false  
-help(package = "esquisse")
-demo(package = "esquisse") 
-vignette(package = "esquisse") 
-```
 
-After running these commands, we find that the `esquisse` package for `R` includes a vignette, but not a demo.
 
-## Part 1.e (Sol.)
+SOLUTIONS - <- <- <- <- <- <- <- <- 
 
-We can easily find the BibTeX citation for `esquisse` by using the command `citation(package = "...")`.
-
-```{r}
-#| size: "scriptsize"
-#| code-fold: FALSE
-#| eval: false  
-citation(package = "esquisse")
-```
-
-After adding the citation to our `.bib` file, we can also obtain the lovely in-text citation, [@esquisse].
 
 ## Part 1.f (Sol.)
 
