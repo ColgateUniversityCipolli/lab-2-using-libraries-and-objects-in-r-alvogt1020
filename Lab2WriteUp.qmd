@@ -147,6 +147,10 @@ i.  Select `palmerpenguins` from the "Select an environment in which to search:"
 ii. Drag `body_mass_g` to the X box and `species` to the fill box.
 iii. Describe what you see in words. What can you conclude about Adelie, Chinstrap, and Gentoo penguins based on the resulting plot?
 
+**Solution**
+
+Following the instructions outlined in Part F, we generate a histogram with the body mass of penguins on the x axis and the total count on the y axis. The histogram is color-coded by species of penguins. The histogram is right skewed with a peak around the 3500 gram mark. We see that the Adelie penguins are more populous than the other two species. Furthermore, Adelie penguinshave an average mass of in the 3500-4000 gram range. The second most populous species is the Gentoo Penguin. Gentoo penguins, on average, weigh more than the other two species with an average mass of around the 5000 gram mark. The least populous species of penguins is the Chinstrap penguin. Their mass distribution loosely mimics that of the Adelie, with a similar center and spread, though it is slightly more symmetric than that of the Adelie penguin. The mass distribution for the Gentoo penguin is roughly symmetric.
+
 # Objects and Vectors
 
 Create the following vectors in `R`. In some cases, you may be able to use `seq()` or `rep()` while in others you cannot. Use these functions when possible, otherwise manually create the vector and explain why that was necessary.
@@ -207,43 +211,7 @@ The Fibonacci Sequence is a recursive formula: $$F_n = F_{n-1} + F_{n-2}$$ where
 
 Create a vector of the first 10 Fibonacci numbers.
 
-## Part b
-
-Triangular Numbers are the cumulative sums of natural numbers: $$F_n = \frac{n(n+1)}{2}.$$
-
-Create a vector of the first 10 Triangular Numbers.
-
-## Part c
-
-Suppose I were designing a repeated meausres experiment with three treatment conditions. Each of $n=10$ participants (with `ID` 1 to 10) will receive *all* experimental conditions, call them "Control", "Treatment A", and "Treatment B".
-
-Consider setting up data entry for this experiment.
-
-i.  Create a vector containing each `ID` repeated three times, once for each treatment.
-ii. Create a vector containing each `Treatment` repeated for each participant ID.
-
-## Part d
-
-Create a vector containing the `character` "MATH" and the `numeric` 240. What is the resulting class? Explain why in a sentence.
-
-
-
-
-
-
-
-
-
-
-
-SOLUTIONS - <- <- <- <- <- <- <- <- 
-
-
-## Part 1.f (Sol.)
-
-Following the instructions outlined in Part F, we generate a histogram with the body mass of penguins on the x axis and the total count on the y axis. The histogram is color-coded by species of penguins. The histogram is right skewed with a peak around the 3500 gram mark. We see that the Adelie penguins are more populous than the other two species. Furthermore, Adelie penguinshave an average mass of in the 3500-4000 gram range. The second most populous species is the Gentoo Penguin. Gentoo penguins, on average, weigh more than the other two species with an average mass of around the 5000 gram mark. The least populous species of penguins is the Chinstrap penguin. Their mass distribution loosely mimics that of the Adelie, with a similar center and spread, though it is slightly more symmetric than that of the Adelie penguin. The mass distribution for the Gentoo penguin is roughly symmetric.
-
-## Part 2.a
+**Solution**
 
 We can create a vector of the first 10 Fibonacci numbers using manual vector creation:
 
@@ -253,7 +221,14 @@ We can create a vector of the first 10 Fibonacci numbers using manual vector cre
 (fibonacci.ten = c(0,1,1,2,3,5,8,13,21,34))
 ```
 
-## Part 2.b
+## Part b
+
+Triangular Numbers are the cumulative sums of natural numbers: $$F_n = \frac{n(n+1)}{2}.$$
+
+Create a vector of the first 10 Triangular Numbers.
+
+
+**Solution**
 
 We can create a vector of the first 10 Triangular Numbers (beginning with $F_1$) by creating a vector for our $n$ values, 1 through 10, and then applying the formula provided:
 
@@ -264,7 +239,16 @@ We can create a vector of the first 10 Triangular Numbers (beginning with $F_1$)
 (triangular.ten = (n * (1+n)) / 2)
 ```
 
-## Part 2.c
+## Part c
+
+Suppose I were designing a repeated meausres experiment with three treatment conditions. Each of $n=10$ participants (with `ID` 1 to 10) will receive *all* experimental conditions, call them "Control", "Treatment A", and "Treatment B".
+
+Consider setting up data entry for this experiment.
+
+i.  Create a vector containing each `ID` repeated three times, once for each treatment.
+ii. Create a vector containing each `Treatment` repeated for each participant ID.
+
+**Solution**
 
 i.  We construct the ID vector by telling `R` to take the vector of numbers one through ten, and to then repeat *each component* three times before moving to the next component.
 
@@ -281,6 +265,10 @@ ii. To create the Treatment vector, we tell `R` to make the three-dimensional ve
 #| code-fold: FALSE
 (Treatment = rep(x = c("Control","Treatment A", "Treatment B"), times = 10))
 ```
+
+## Part d
+
+Create a vector containing the `character` "MATH" and the `numeric` 240. What is the resulting class? Explain why in a sentence.
 
 ## Part 2.d
 
